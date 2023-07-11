@@ -26,6 +26,8 @@ PrusaSlicer/vendor
 <br />
 <img width="701" src="./.assets/2.png">
 <br />
+
+- Setup [sm2uploader](https://github.com/macdylan/sm2uploader)
 <img width="701" src="./.assets/3.png">
 <br />
 <img width="701" src="./.assets/4.png">

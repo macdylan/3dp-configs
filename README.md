@@ -22,13 +22,13 @@ PrusaSlicer/vendor
 - Relaunch PrusaSlicer, click `Configuration` menu / `Configuration Assistant`
 - Select `Snapmaker` in Other Vendors and Next until the wizard is finished.
 
-<img width="701" src="https://github.com/macdylan/3dp-configs/.assets/1.png">
+<img width="701" src="./.assets/1.png">
 <br />
-<img width="701" src="https://github.com/macdylan/3dp-configs/.assets/2.png">
+<img width="701" src="./.assets/2.png">
 <br />
-<img width="701" src="https://github.com/macdylan/3dp-configs/.assets/3.png">
+<img width="701" src="./.assets/3.png">
 <br />
-<img width="701" src="https://github.com/macdylan/3dp-configs/.assets/4.png">
+<img width="701" src="./.assets/4.png">
 
 
 ----

@@ -28,9 +28,16 @@ jobs:
           files: OrcaSlicer/
           dest: orcaslicer-by-dylan_${{ steps.datetime.outputs.time }}_${ GITHUB_SHA::7 }.zip
 
+      - uses: rickstaa/action-create-tag@v1
+        id: tag_create
+        with:
+          tag: ${{ steps.datetime.outputs.time}}_${ GITHUB_SHA::7 }
+          tag_exists_error: false
+
       - uses: softprops/action-gh-release@v1
         name: Create Release
         with:
+          tag_name: ${{ steps.datetime.outputs.time}}_${ GITHUB_SHA::7 }
           prerelease: true
           files: ${ GITHUB_WORKSPACE }/*.zip
 

@@ -31,12 +31,10 @@ jobs:
           files: OrcaSlicer/
           dest: orcaslicer-by-dylan_${{  steps.tagname.outputs.name  }}.zip
 
-      - uses: rickstaa/action-create-tag@v1.6.2
-        id: tag_create
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.tagname.outputs.name }}
-          tag_exists_error: false
+      - name: Create tag
+        run: |
+          git tag ${{ steps.tagname.outputs.name }}
+          git push --tags
 
       - uses: softprops/action-gh-release@v1
         name: Create Release

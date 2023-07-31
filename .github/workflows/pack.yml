@@ -31,7 +31,7 @@ jobs:
           files: OrcaSlicer/
           dest: orcaslicer-by-dylan_${{  steps.tagname.outputs.tagname  }}.zip
 
-      - uses: rickstaa/action-create-tag@v1
+      - uses: rickstaa/action-create-tag@v1.6.2
         id: tag_create
         with:
           tag: ${{ steps.tagname.outputs.tagname }}

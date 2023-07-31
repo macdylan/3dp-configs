@@ -17,30 +17,30 @@ jobs:
           format: YYYYMMDD
 
       - id: tagname
-        run: echo "tagname=${{ steps.datetime.outputs.formattedTime }}_$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        run: echo "name=${{ steps.datetime.outputs.formattedTime }}_$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
       - uses: vimtor/action-zip@v1.1
         name: Pack prusaslicer
         with:
           files: PrusaSlicer/
-          dest: prusaslicer-by-dylan_${{ steps.tagname.outputs.tagname }}.zip
+          dest: prusaslicer-by-dylan_${{ steps.tagname.outputs.name }}.zip
 
       - uses: vimtor/action-zip@v1.1
         name: Pack orcaslicer
         with:
           files: OrcaSlicer/
-          dest: orcaslicer-by-dylan_${{  steps.tagname.outputs.tagname  }}.zip
+          dest: orcaslicer-by-dylan_${{  steps.tagname.outputs.name  }}.zip
 
       - uses: rickstaa/action-create-tag@v1.6.2
         id: tag_create
         with:
-          tag: ${{ steps.tagname.outputs.tagname }}
+          tag: ${{ steps.tagname.outputs.name }}
           tag_exists_error: false
 
       - uses: softprops/action-gh-release@v1
         name: Create Release
         with:
-          tag_name: ${{ steps.tagname.outputs.tagname }}
+          tag_name: ${{ steps.tagname.outputs.name }}
           prerelease: true
           files: ${{ github.workspace }}/*.zip
 

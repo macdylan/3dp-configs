@@ -1,0 +1,12 @@
+{
+  "name": "Snapmaker A250",
+  "type": "machine_model",
+  "model_id": "snapmaker_a250",
+  "url": "",
+  "nozzle_diameter": "0.2;0.4;0.6;0.8",
+  "machine_tech": "FFF",
+  "family": "Snapmaker",
+  "bed_model": "Snapmaker A250_bed.stl",
+  "bed_texture": "Snapmaker A250_texture.svg",
+  "hotend_model": ""
+}

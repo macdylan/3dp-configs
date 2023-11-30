@@ -1,16 +1,16 @@
 {
-    "name": "fdm_filament_pla_eco",
-    "instantiation": "false",
-    "inherits": "fdm_filament_pla",
-    "default_filament_colour": [
-        "#D5DDDC"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "205"
-    ],
-    "nozzle_temperature": [
-        "200"
-    ],
-    "type": "filament",
-    "from": "system"
+  "type": "filament",
+  "from": "system",
+  "instantiation": "false",
+  "name": "fdm_filament_pla_eco",
+  "inherits": "fdm_filament_pla",
+  "nozzle_temperature_initial_layer": [
+    "205"
+  ],
+  "nozzle_temperature": [
+    "200"
+  ],
+  "default_filament_colour": [
+    "#D5DDDC"
+  ]
 }

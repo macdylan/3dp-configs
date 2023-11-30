@@ -38,3 +38,16 @@ Use my other project [sm2uploader](https://github.com/macdylan/sm2uploader), whi
 <br />
 <img width="701" src="./_assets/4.png">
 
+## Explanation for Start GCodes
+In the version dated 20231130, I've added some logic to clean the nozzle. Here are the complete steps:
+
+1. Start with the first layer bed temperature, preheat the nozzle to 165 degrees, and move the nozzle to a position that's convenient for manual cleaning. You can check the nozzle area for any debris and clean it with a wire brush or other tools.
+2. Once the bed reaches the target temperature, the nozzle will home. With Snapmaker 2, it will circle around the bed at a height of 0.2mm for a structure check, You can observe if the bed is mostly level and also see the boundaries of the nozzle's movement, which are reduced when using the Dual Extruder Module and Quick Swap Kit. With J1, will only flash the LED to signal that the print head is about to home, no other actions.
+3. The nozzle then moves away from the bed and heats up to 15 degrees above the printing temperature. The purpose is to prevent clogging from any high-temperature material residue in the nozzle which could prevent extrusion. Please note that temperature is based on my experience, if you encounter a clogged nozzle, please report the issue.
+4. Flush the filament at two different temperatures to ensure a clean nozzle, using about 4-8cm of filament, which isn't wasteful considering the reliability of the printing process. If you want to avoid any waste, you can disable this logic in the gcode with `{if 0 == 1}...{endif}`.
+5. For dual extrusion module or J1 dual material printing, the standby nozzle is flushed first, followed by the initial printing nozzle. This is to prevent any material loading errors or nozzle malfunctions during the actual print, any pre-checks are helpful.
+6. After flushing, an L-shaped thin line is extruded at the bed edge to remove any residual material around the nozzle, which helps improve print quality.
+7. Start the printing process.
+8. At the end of printing, retract the filament back near the extruder gear. This way, even after cooling down, you can easily change the filament without cut or heat.
+
+Some logic will differ depending on the type of device. If you like my works, please show your support by clicking the star in the top right on GitHub. Or you can buy me a coffee: https://ko-fi.com/L3L1MFQF6

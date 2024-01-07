@@ -1,3 +1,7 @@
+# Starting from 2024/01/01, there is no need to download and install the files separately
+
+All Profiles have been merged into [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer-settings/pull/225) and [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer/pull/3009), so no need to install the project file separately. But some urgent Bug fixes and some test features may be released in this project.
+
 # My 3DP Configs
 [![Build Status](https://github.com/macdylan/3dp-configs/actions/workflows/pack.yml/badge.svg)]
 [Chinese Readme](./README.md)

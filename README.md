@@ -1,3 +1,7 @@
+# 从 2024/01/01 开始，无需单独下载安装这个项目的文件
+
+所有 Profiles 已经合并到 [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer-settings/pull/225) 和 [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer/pull/3009) 中，跟随发行版释出，因此无需再单独安装本项目文件。但一些紧急的 Bug 修复和一些测试功能可能在本项目进行发布。
+
 # My 3DP Configs
 [![Build Status](https://github.com/macdylan/3dp-configs/actions/workflows/pack.yml/badge.svg)]
 [English Readme](./README-en.md)

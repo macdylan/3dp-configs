@@ -1,0 +1,14 @@
+{
+  "type": "filament",
+  "from": "system",
+  "instantiation": "true",
+  "name": "Snapmaker ABS Benchy",
+  "setting_id": "542898558",
+  "inherits": "Snapmaker Dual ABS @base",
+  "compatible_printers": [
+    "Snapmaker Artisan (0.4 nozzle)"
+  ],
+  "compatible_prints": [
+    "0.25 Benchy @Snapmaker Artisan (0.4 nozzle)"
+  ]
+}

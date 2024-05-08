@@ -12,9 +12,8 @@
     "35",
     "35"
   ],
-  "extruder_clearance_radius": "110",
-  "extruder_clearance_height_to_rod": "45",
-  "extruder_clearance_height_to_lid": "133",
+  "extruder_clearance_height_to_rod": "60",
+  "extruder_clearance_height_to_lid": "285",
   "retract_length_toolchange": [
     "18",
     "18"

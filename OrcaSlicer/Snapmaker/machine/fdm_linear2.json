@@ -14,8 +14,8 @@
     "Normal Lift"
   ],
   "extruder_clearance_radius": "75",
-  "extruder_clearance_height_to_rod": "25",
-  "extruder_clearance_height_to_lid": "90",
+  "extruder_clearance_height_to_rod": "35",
+  "extruder_clearance_height_to_lid": "325",
   "machine_max_acceleration_x": [
     "1100"
   ],

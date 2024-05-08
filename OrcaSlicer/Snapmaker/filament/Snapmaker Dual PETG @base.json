@@ -14,9 +14,6 @@
   "filament_density": [
     "1.25"
   ],
-  "filament_max_volumetric_speed": [
-    "14"
-  ],
   "filament_z_hop_types": [
     "Spiral Lift"
   ],

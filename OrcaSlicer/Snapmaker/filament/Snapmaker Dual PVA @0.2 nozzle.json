@@ -17,7 +17,7 @@
     "Snapmaker Artisan (0.2 nozzle)"
   ],
   "filament_max_volumetric_speed": [
-    "1.2"
+    "1.4"
   ],
   "nozzle_temperature_initial_layer": [
     "220"
